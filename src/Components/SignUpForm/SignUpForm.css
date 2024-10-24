@@ -24,11 +24,13 @@
     height: 100%;
     background: #fff;
     box-sizing: border-box;
+    
 }
 
 .wrapper button:hover{
     background-color: rgb(63, 61, 61);
     cursor: pointer;
+    
   }
   body{
     display: flex;
@@ -38,4 +40,5 @@
   .buttonreg{
     background-color: black;
     width: 100%;
+    font-size: 26px;
   }

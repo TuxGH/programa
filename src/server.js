@@ -9,7 +9,7 @@ app.use(express.json());
 
 
 app.use(cors({
-  origin: 'http://localhost:3000',  // Allow requests from React frontend
+  origin: 'http://localhost:3000',  // Requests data from React frontend
   methods: 'GET, POST',
   credentials: true
 }));
@@ -28,10 +28,10 @@ mongoose.connect("mongodb://localhost:27017/employee", {
 
 
 
-// POST Route for Registration
+// POSTs Route for Registration
 app.post('/register', (req, res) => {
   EmployeeModel.create(req.body)
-    .then(employee => res.json(employee))  // Return created employee data
+    .then(employee => res.json(employee))  
     .catch(err => {
       console.error('Error creating employee:', err); // Log error for debugging
       res.status(500).json({ error: 'An error occurred while creating employee' });

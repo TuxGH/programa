@@ -46,11 +46,12 @@ const SignupForm = () => {
                 <div className="input-box">
                     <input type="password" placeholder='Password' required onChange={(e) => setPassword(e.target.value)} />
                 </div>
-                
+        <br></br>
                 <button className="buttonreg"  type="submit">Register</button>
 
-             
+        <br></br><br></br>
                     <h3>Already have an account?</h3> 
+        <br></br>
                     <button className="buttonreg" type="button" onClick={() => navigate.push('/')}>Login</button>
                
             </form>

@@ -58,7 +58,7 @@ const Login = () => {
 
                 <li><button classname="aSubmit" type="submit"><h2>Login</h2></button></li>
                 <li> <button onClick={() => navigate.push('/signup')}> <h2>Register</h2></button></li>
-                <li><p>Make Account</p> </li>
+                
                 
               </ul>
             </nav>
